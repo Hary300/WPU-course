@@ -242,68 +242,92 @@
       <section id="tickets">
         <h2>Amankan Tiketmu</h2>
         <form>
-          <label for="nama"
-            >Name:
-            <input
-              type="text"
-              id="nama"
-              name="nama"
-              placeholder="Masukan nama..."
-            />
-          </label>
-          <br />
+          <table>
+            <tr>
+              <td><label for="nama">Name: </label></td>
+              <td>
+                <input
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  placeholder="Masukan nama..."
+                />
+              </td>
+            </tr>
 
-          <label for="email">
-            Email:
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Masukan email..."
-            />
-          </label>
+            <tr>
+              <td><label for="email"> Email: </label></td>
+              <td>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Masukan email..."
+                />
+              </td>
+            </tr>
 
-          <br />
-          <label for="no-tel">
-            Telephone:
-            <input
-              type="tel"
-              id="no-tel"
-              name="no-tel"
-              placeholder="Masukan nomor telephone..."
-            />
-          </label>
+            <tr>
+              <td><label for="no-tel"> Telephone: </label></td>
+              <td>
+                <input
+                  type="tel"
+                  id="no-tel"
+                  name="no-tel"
+                  placeholder="Masukan nomor telephone..."
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Tipe Ticket:</td>
 
-          <p>Tipe Ticket:</p>
-          <input type="radio" name="tipe-tiket" id="regular" value="regular" />
-          <label for="regular">Regular</label>
+              <td>
+                <input
+                  type="radio"
+                  name="tipe-tiket"
+                  id="regular"
+                  value="regular"
+                />
+                <label for="regular">Regular</label>
 
-          <input type="radio" name="tipe-tiket" id="vip" value="vip" />
-          <label for="vip">VIP</label>
+                <input type="radio" name="tipe-tiket" id="vip" value="vip" />
+                <label for="vip">VIP</label>
 
-          <input type="radio" name="tipe-tiket" id="vvip" value="vvip" />
-          <label for="vvip">VVIP</label>
-          <br />
+                <input type="radio" name="tipe-tiket" id="vvip" value="vvip" />
+                <label for="vvip">VVIP</label>
+              </td>
+            </tr>
 
-          <label for="jumlah-tiket">Jumlah Ticket</label>
-          <input
-            type="number"
-            name="jumlah-ticket"
-            id="jumlah-tiket"
-            placeholder="Masukan jumlah tiket (1-10)"
-            min="1"
-            max="10"
-          />
+            <tr>
+              <td><label for="jumlah-tiket">Jumlah Ticket (1-10): </label></td>
+              <td>
+                <input
+                  type="number"
+                  name="jumlah-ticket"
+                  id="jumlah-tiket"
+                  min="1"
+                  max="10"
+                />
+              </td>
+            </tr>
 
-          <p>Day Pass:</p>
-          <input type="checkbox" name="day1" id="day1" value="day1" />
-          <label for="day1">Day 1</label>
-          <input type="checkbox" name="day2" id="day2" value="day2" />
-          <label for="day2">Day 2</label>
-          <input type="checkbox" name="day3" id="day3" value="day3" />
-          <label for="day3">Day 3</label>
+            <tr>
+              <td>Day Pass:</td>
+              <td>
+                <input type="checkbox" name="day1" id="day1" value="day1" />
+                <label for="day1">Day 1</label>
+                <input type="checkbox" name="day2" id="day2" value="day2" />
+                <label for="day2">Day 2</label>
+                <input type="checkbox" name="day3" id="day3" value="day3" />
+                <label for="day3">Day 3</label>
+              </td>
+            </tr>
+
+            <tr>
+              <td><button type="submit">Kirim!</button></td>
+            </tr>
+          </table>
         </form>
-        <button type="submit">Kirim!</button>
       </section>
 
       <section id="gallery">
